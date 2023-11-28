@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  background-color: #04B4E6;
+  color: #fff;
+}
+
+@layer base {
+	@font-face {
+		font-family: GilroyRegular;
+		src: url(/fonts/Gilroy-Regular.woff2) format("woff2");
+	}
+
+  @font-face {
+		font-family: GilroySemiBold;
+		src: url(/fonts/Gilroy-SemiBold.woff2) format("woff2");
+	}
+
+	@font-face {
+		font-family: GilroyBold;
+		src: url(/fonts/Gilroy-Bold.woff2) format("woff2");
+	}
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: bg-darker;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 10px;
+}
+
+.astro-7a2c6e {
+	background-image: url(/svg/noise-gradient.svg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.button-gradient {
+	width: 100%;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	cursor: pointer;
+	text-align:center;
+	background-size: 300% 100%;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+
+	background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+	box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.55);
+}
+
+.button-gradient:hover {
+	background-position: 100% 0;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+.gradientdown {
+	background-image: transparent;
+	transition: all 1s ease-in-out;
+	transform: translateY(0);
+}
+
+.gradientdown:hover {
+	background-image: radial-gradient(140% 107.13% at 50% 10%,transparent 37.41%,#04b5e649 69.27%,#6699ff4c 100%);
+	transform: translateY(3em);
+	transition: all 0.3s ease-in-out;
+	transition-duration: 0.1s;
+}
