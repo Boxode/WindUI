@@ -1,0 +1,39 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+---
+<Layout title="404 - page not found">
+	<Header />
+	<main>
+		<div class="min-w-screen min-h-screen flex items-center p-5 lg:p-20 overflow-hidden relative">
+			<div
+				class="flex-1 min-h-full min-w-full rounded-3xl p-10 lg:p-20 text-gray-800 relative md:flex items-center text-center md:text-left">
+				<div class="w-full md:w-1/2">
+					<div class="mb-10 lg:mb-20">
+
+					</div>
+					<div class="mb-10 md:mb-20">
+						<h1 class="font-GilroyBold uppercase text-3xl lg:text-5xl text-blue-600 mb-10">You seem to be lost!</h1>
+						<p class='text-gray-300 font-GilroyRegular text-lg'>The page you're looking for isn't available.</p>
+						<p class='text-gray-300 font-GilroyRegular text-lg'>Try searching again or use the Go Back button below.</p>
+					</div>
+					<div class="mb-20 md:mb-0">
+						<a href='/'
+							class="text-lg font-GilroySemibold outline-none focus:outline-none transition-colors bg-white px-4 py-2 rounded-lg text-blue-400 hover:text-blue-600">← Go Back</a>
+					</div>
+				</div>
+				<div class="w-full md:w-1/2 text-center">
+          <img src="/svg/404.svg" alt="404" />
+				</div>
+			</div>
+			<div
+				class="w-64 md:w-96 h-96 md:h-full bg-blue-300 bg-opacity-30 absolute -top-64 md:-top-96 right-20 md:right-32 rounded-full pointer-events-none -rotate-45 transform">
+			</div>
+			<div
+				class="w-96 h-full bg-blue-200 bg-opacity-20 absolute -bottom-96 right-64 rounded-full pointer-events-none -rotate-45 transform">
+			</div>
+		</div>
+	</main>
+	<Footer />
+</Layout>
