@@ -1,0 +1,43 @@
+---
+import ItemCard from '@/components/ItemCard.astro'
+---
+
+<section class='relative mx-auto w-full max-w-container px-4 sm:px-6 lg:px-8 pt-32'>
+	<div class="max-w-2xl">
+		<h2
+			class="text-lg pl-1 leading-7 text-transparent bg-clip-text bg-gradient-to-b from-[#04B4E6] to-blue-600 font-[GilroySemiBold]">
+			Components</h2>
+		<p class="mt-4 text-5xl tracking-tight text-slate-900 dark:text-white font-[GilroyBold]">
+			Elegant, ready-to-implement user interface components for your project, designed to enhance aesthetics and
+			functionality.
+		</p>
+		<div class="max-w-xl">
+			<p class="mt-4 text-base leading-7 dark:text-white text-slate-700 font-[GilroyRegular]">
+				Components and templates expertly designed to bring your next
+				project to life with a touch of unmatched excellence and
+				style.
+			</p>
+		</div>
+		<div class="mt-6">
+			<a
+				class="text-base text-transparent bg-clip-text bg-gradient-to-b from-[#04B4E6] to-blue-600 font-[GilroySemiBold] hover:text-cyan-500 transition-colors"
+				href="/components">Browse
+				all components <span aria-hidden="true">→</span>
+			</a>
+		</div>
+	</div>
+	<div>
+		<ItemCard />
+	</div>
+	<div
+		class="pointer-events-none absolute -inset-x-2.5 -bottom-2.5 h-[16.6%] w-full bg-gradient-to-t select-none overflow-hidden from-darker to-transparent sm:h-[44.4%]" />
+	<div class="select-none pointer-events-none relative z-10 -mt-5 flex justify-center">
+		<a
+			class="inline-flex text-sm justify-center rounded-lg overflow-hidden items-center font-GilroySemibold py-3 px-4 bg-slate-900 dark:bg-primary dark:text-white dark:hover:bg-cyan-600 transition-colors duration-100 hover:bg-slate-700 pointer-events-auto"
+			href="/components">
+			<span>
+				More components →
+			</span>
+		</a>
+	</div>
+</section>
