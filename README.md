@@ -12,7 +12,7 @@
 </p>
 
 <div align='center'>
-	<a href="https://discord.com/invite/4eeurUVvTy"><img src="https://img.shields.io/discord/921181043074142269?color=%237289da&style=for-the-badge&logo=discord&logoColor=white&label=Discord" alt="Discord"></a>
+	<a href="https://discord.gg/ey2YugTbBz"><img src="https://img.shields.io/discord/921181043074142269?color=%237289da&style=for-the-badge&logo=discord&logoColor=white&label=Discord" alt="Discord"></a>
 </div>
 
 ---
