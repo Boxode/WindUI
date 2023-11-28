@@ -1,0 +1,50 @@
+<svg width="2000" height="1400" xmlns="http://www.w3.org/2000/svg">
+	<style>
+		.shadow_right {
+			-webkit-filter: drop-shadow(-5px -5px 15px #343838);
+			filter: drop-shadow(-5px -5px 15px #343838)
+		}
+
+		.shadow_left {
+			-webkit-filter: drop-shadow(5px 5px 15px #343838);
+			filter: drop-shadow(5px 5px 15px #343838)
+		}
+
+	</style>
+	<defs>
+		<linearGradient id="gradient__0" x1="0" y1="0" x2="0" y2="1">
+			<stop stop-color="#343838" offset="0%" />
+			<stop stop-color="#005f6b" offset="12.5%" />
+			<stop stop-color="#008c9e" offset="25%" />
+			<stop stop-color="#00b4cc" offset="37.5%" />
+			<stop stop-color="#fff" offset="50%" />
+			<stop stop-color="#00b4cc" offset="62.5%" />
+			<stop stop-color="#008c9e" offset="75%" />
+			<stop stop-color="#005f6b" offset="87.5%" />
+			<stop stop-color="#343838" offset="100%" />
+		</linearGradient>
+		<filter id="grain" x="-1000" y="-700" width="4000" height="2800" filterUnits="userSpaceOnUse">&gt;
+			<feFlood flood-color="#fff" result="neutral-gray" />
+			<feTurbulence type="fractalNoise" baseFrequency="2.5" numOctaves="100" stitchTiles="stitch" result="noise" />
+			<feColorMatrix in="noise" type="saturate" values="0" result="destaturatedNoise" />
+			<feComponentTransfer in="desaturatedNoise" result="theNoise">
+				<feFuncA type="table" tableValues="0 0 0.4 0" />
+			</feComponentTransfer>
+			<feBlend in="SourceGraphic" in2="theNoise" mode="soft-light" result="noisy-image" />
+		</filter>
+	</defs>
+	<g filter="url(#grain)">
+		<path fill="#343838" d="M0 0h2000v1400H0z" />
+		<path id="rect__5" fill="url(#gradient__0)" d="M909.091 318.182h181.818v763.636H909.091z" />
+		<path class="shadow_left" id="rect__6" fill="url(#gradient__0)" d="M1090.909 254.545h181.818v890.909h-181.818z" />
+		<path class="shadow_left" id="rect__7" fill="url(#gradient__0)" d="M1272.727 190.909h181.818v1018.182h-181.818z" />
+		<path class="shadow_left" id="rect__8" fill="url(#gradient__0)" d="M1454.545 127.273h181.818v1145.455h-181.818z" />
+		<path class="shadow_left" id="rect__9" fill="url(#gradient__0)" d="M1636.364 63.636h181.818v1272.727h-181.818z" />
+		<path class="shadow_left" id="rect__10" fill="url(#gradient__0)" d="M1818.182 0H2000v1400h-181.818z" />
+		<path class="shadow_right" id="rect__4" fill="url(#gradient__0)" d="M727.273 254.545h181.818v890.909H727.273z" />
+		<path class="shadow_right" id="rect__3" fill="url(#gradient__0)" d="M545.455 190.909h181.818v1018.182H545.455z" />
+		<path class="shadow_right" id="rect__2" fill="url(#gradient__0)" d="M363.636 127.273h181.818v1145.455H363.636z" />
+		<path class="shadow_right" id="rect__1" fill="url(#gradient__0)" d="M181.818 63.636h181.818v1272.727H181.818z" />
+		<path class="shadow_right" id="rect__0" fill="url(#gradient__0)" d="M0 0h181.818v1400H0z" />
+	</g>
+</svg>
