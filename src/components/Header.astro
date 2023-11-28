@@ -1,0 +1,161 @@
+---
+import Container from "./Container.astro";
+import { Image } from "astro:assets";
+import Search from "./Search.astro";
+import Switcher from './Switcher'
+
+const links = [
+  {
+    to: "/components",
+    label: "Components",
+    class: ""
+  },
+  {
+    to: "/templates",
+    label: "Templates",
+    class: ""
+  },
+  {
+    to: "https://neoicons.windui.org",
+    label: "neoicons",
+    class: "",
+    target: "_blank"
+  },
+  {
+    to: "/blog",
+    label: "What's new",
+    class: ""
+  },
+  {
+    to: "/login",
+    label: "Sign In",
+    class: "sm:block lg:hidden lg:opacity-0 relative border-t border-gray-500 flex h-9 sm:w-full pt-4 before:absolute before:inset-0 before:rounded-full before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+  },
+  {
+    to: "/all-access",
+    label: "Get all access →",
+    class: "sm:block lg:hidden lg:opacity-0 relative sm:flex flex h-9 sm:w-full items-center justify-center before:absolute before:inset-0 before:rounded-full before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max dark:bg-white dark:text-black rounded-xl hover:bg-gray-200"
+  }
+]
+---
+
+<script>
+	let isToggled = false;
+	const navlinks = document.querySelector( "#navlinks" );
+	const hamburger = document.querySelector( "#hamburger" );
+	const layer = document.querySelector( "#navLayer" );
+	const links = [ ...navlinks.querySelector( "ul" ).children ];
+
+	function toggleNavlinks() {
+		if ( isToggled ) {
+			navlinks.classList.add( "!visible", "!scale-100", "!opacity-100", "!lg:translate-y-0" );
+			hamburger.classList.add( "toggled" );
+			layer.classList.add( "origin-top", "scale-y-100", "backdrop-blur-lg" );
+		} else {
+			navlinks.classList.remove( "!visible", "!scale-100", "!opacity-100", "!lg:translate-y-0" );
+			hamburger.classList.remove( "toggled" );
+			layer.classList.remove( "origin-top", "scale-y-100", "backdrop-blur-lg" );
+		}
+	}
+	hamburger.addEventListener( "click", () => {
+		isToggled = !isToggled;
+		toggleNavlinks();
+	} );
+
+	links.forEach( ( link ) => {
+		link.addEventListener( "click", () => {
+			isToggled = !isToggled;
+			toggleNavlinks();
+		} );
+	} );
+
+</script>
+
+<header>
+	<nav
+		class="fixed z-10 w-full border-b border-black/5 dark:border-white/5 lg:border-transparent backdrop-blur-md py-2 select-none">
+		<Container>
+			<div class="relative flex  items-center justify-between gap-6 py-3 md:gap-0 md:py-4">
+				<div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
+					<a href="/" aria-label="logo" class="flex items-center space-x-2">
+						<picture>
+							<source media="(prefers-color-scheme: dark)" srcset="/svg/logo-light.svg">
+							<source media="(prefers-color-scheme: light)" srcset="/svg/logo-dark.svg">
+							<Image alt="windUI" src="/svg/logo-light.svg" width="150" height="70" style="max-width: 100%;">
+						</picture>
+					</a>
+
+					<div class="relative flex max-h-10 items-center lg:hidden">
+						<button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6">
+							<div aria-hidden="true" id="line"
+								class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"></div>
+							<div aria-hidden="true" id="line2"
+								class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"></div>
+						</button>
+					</div>
+				</div>
+				<div id="navLayer" aria-hidden="true"
+					class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-lg transition duration-500 dark:bg-gray-900/80 lg:hidden">
+				</div>
+				<div id="navlinks"
+					class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-[80%] lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none">
+					<div class="w-full text-gray-600 dark:text-gray-200 lg:w-auto lg:pr-4 lg:pt-0">
+						<ul class="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-0 lg:text-base">
+							{
+							links.map((link) => (
+							<li>
+								<a href={link.to} class={link.class} target={link.target}>
+									<span
+										class='hover:text-primary block transition dark:hover:text-white font-[GilroySemiBold] md:px-4'>{link.label}</span>
+								</a>
+							</li>
+							))
+							}
+							<li>
+								<Search />
+							</li>
+						</ul>
+					</div>
+					<div class='hidden lg:ml-4 lg:flex lg:items-center lg:border-l lg:border-slate-900/15 lg:pl-4'>
+						<div>
+							<a href="/login"
+								class="flex gap-2 font-[GilroySemiBold] text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4">
+								<span>Sign In</span>
+							</a>
+						</div>
+						<div class="mt-12 lg:mt-0">
+							<a href="/all-access"
+								class="relative inline-flex h-10 overflow-hidden rounded-xl p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 hover:scale-105 transition ease-in-out duration-100">
+								<span
+									class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+								<span
+									class="inline-flex items-center justify-center w-full h-full px-3 py-1 text-sm font-[GilroyBold] text-white rounded-xl cursor-pointer bg-darker backdrop-blur-3xl">
+									Get all-access →
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</Container>
+	</nav>
+</header>
+
+<style>
+	#toggle_nav:checked~div #hamburger #line {
+		@apply translate-y-1.5 rotate-45;
+	}
+
+	#toggle_nav:checked~div #hamburger #line2 {
+		@apply -translate-y-1 -rotate-45;
+	}
+
+	.toggled div:first-child {
+		@apply translate-y-1.5 rotate-45;
+	}
+
+	.toggled div:last-child {
+		@apply -translate-y-1 -rotate-45;
+	}
+
+</style>
