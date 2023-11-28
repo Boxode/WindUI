@@ -1,0 +1,90 @@
+---
+import { Image } from 'astro:assets';
+---
+
+<footer class="bg-gradient-to-b from-transparent to-gray-100 py-12 dark:to-gray-900">
+	<div class="mx-auto max-w-6xl px-6 md:px-12 lg:px-6 xl:px-0">
+		<div aria-label="logo" class="flex items-center justify-center space-x-2">
+			<div aria-hidden="true" class="flex flex-col space-y-0.5">
+				<picture class='select-none'>
+					<source media="(prefers-color-scheme: dark)" srcset="/svg/logo-light.svg">
+					<source media="(prefers-color-scheme: light)" srcset="/svg/logo-dark.svg">
+					<Image alt="windUI" src="/svg/logo-light.svg" width="150" height="70" style="max-width: 100%;">
+				</picture>
+			</div>
+		</div>
+		<ul role="list"
+			class="mt-8 flex flex-wrap items-center justify-center gap-4 py-4 text-gray-600 dark:text-gray-400 sm:gap-8 font-[GilroySemiBold]">
+			<li role="listitem">
+				<a href="/components" class="duration-100 hover:text-primary dark:hover:text-white">
+					Components
+				</a>
+			</li>
+			<li role="listitem">
+				<a href="/templates" class="duration-100 hover:text-primary dark:hover:text-white">
+					Templates
+				</a>
+			</li>
+			<li role="listitem">
+				<a href="/blog" class="duration-100 hover:text-primary dark:hover:text-white">
+					Blog
+				</a>
+			</li>
+			<li role="listitem">
+				<a href="/changelog" class="duration-100 hover:text-primary dark:hover:text-white">
+					Changelog
+				</a>
+			</li>
+		</ul>
+		<div class="m-auto mt-4 flex w-max items-center justify-between space-x-4 text-gray-500">
+			<!-- <a class="duration-100 hover:text-gray-600 dark:hover:text-white" href="https://www.facebook.com/BoxodeHQ"
+				title="facebook" target="_blank" aria-label="facebook">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="m-auto w-5" viewBox="0 0 16 16">
+					<path
+						d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+					</path>
+				</svg>
+			</a> -->
+			<a class="duration-100 hover:text-gray-600 dark:hover:text-white" href="https://twitter.com/BoxodeHQ"
+				title="twitter" target="_blank" aria-label="twitter">
+				<svg data-testid="geist-icon" height="18" stroke-linecap="round" stroke-linejoin="round"
+					style="color:currentColor" viewBox="0 0 16 16" width="18" aria-label="">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M0.5 0.5H5.75L9.48421 5.71053L14 0.5H16L10.3895 6.97368L16.5 15.5H11.25L7.51579 10.2895L3 15.5H1L6.61053 9.02632L0.5 0.5ZM12.0204 14L3.42043 2H4.97957L13.5796 14H12.0204Z"
+						fill="currentColor"></path>
+				</svg>
+			</a>
+			<a href="https://github.com/Boxode/windUI" target="_blank"
+				class="duration-100 hover:text-gray-600 dark:hover:text-white" aria-label='Learn more about Wind UI in the GitHub Repo'>
+				<svg class="w-5 m-auto" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+					viewBox="0 0 20 20">
+					<path fill-rule="evenodd"
+						d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+						clip-rule="evenodd">
+					</path>
+				</svg>
+			</a>
+			<a href="https://discord.com/invite/gdRmAa5xHU" target='_blank'
+				class="duration-100 hover:text-gray-600 dark:hover:text-white" aria-label='Discord of Boxode, Ltd.'>
+				<svg class="w-5 m-auto" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+					viewBox="0 0 21 16">
+					<path
+						d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z">
+					</path>
+				</svg>
+			</a>
+			<a class="duration-100 hover:text-gray-600 dark:hover:text-white"
+				href="https://www.linkedin.com/company/boxodehq/" title="linkedin" target="_blank" aria-label="linkedin">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="m-auto w-5" viewBox="0 0 16 16">
+					<path
+						d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+					</path>
+				</svg>
+			</a>
+		</div>
+		<div class="mt-12 text-center">
+			<p class="text-sm tracking-wide text-gray-500 flex flex-col font-[GilroyRegular]">© 2023 Wind UI is a trademark of
+				Boxode, Ltd.</p>
+		</div>
+	</div>
+</footer>
