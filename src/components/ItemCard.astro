@@ -1,0 +1,16 @@
+---
+import Card from "./Card.astro";
+import { CARDS } from "@/lib/Card";
+---
+
+<div class="relative grid grid-cols-[repeat(330px,minmax(12rem,1fr))] gap-x-8 gap-y-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center pt-10">
+  {CARDS.map((card) => (
+    <Card
+      title={card.title}
+      quantity={card.quantity}
+      image={card.image}
+      href={card.href}
+      alt={card.alt}
+    />
+  ))}
+</div>
