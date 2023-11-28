@@ -1,0 +1,37 @@
+---
+import { LinkIcon } from "./Icons";
+import { Image } from 'astro:assets'
+import '../globals.css'
+
+interface Props {
+	title: string
+	quantity: string
+	href?: string
+	image: string
+	alt?: string
+}
+
+const { title, quantity, href, image, alt } = Astro.props
+---
+
+<section>
+	<div
+		class="relative gradientdown text-gray-700 bg-white border-1 border-gray-400 dark:border-gray-700 dark:bg-card transition-all duration-100 transform scale-100 hover:scale-101 w-72 lg:w-[320px] rounded-lg">
+		<a href={href} class='flex items-center flex-col justify-center'>
+			<div
+				class='flex justify-between items-center border-b-1 border-gray-400 dark:border-gray-700 w-full px-4 py-2 text-black dark:text-white'>
+
+				<h3 class="flex flex-col text-xl font-GilroyBold leading-snug tracking-normal">
+					{title}
+					<span class='font-GilroyRegular text-sm text-gray-500'>
+						{quantity}
+					</span>
+				</h3>
+				<LinkIcon />
+			</div>
+			<div class='drop-shadow-[0_1px_15px_rgba(0,0,0,0.15)] dark:drop-shadow-[0_1px_15px_rgba(255,255,255,0.15)]'>
+				<Image src={image} alt={alt} width="250" height="250" />
+			</div>
+		</a>
+	</div>
+</section>
