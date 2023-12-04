@@ -104,7 +104,7 @@ const links = [
 							{
 							links.map((link) => (
 							<li>
-								<a href={link.to} class={link.class} target={link.target}>
+								<a href={link.to} class={link.class} target={link.target} aria-label={link.label}>
 									<span
 										class='hover:text-primary block transition dark:hover:text-white font-[GilroySemiBold] md:px-4'>{link.label}</span>
 								</a>
