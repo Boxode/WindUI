@@ -217,7 +217,7 @@ export default function Pricing() {
 
 					{/* Get everything pricing card */}
 
-					<div className='p-4 xl:w-[35%] md:w-1/2 w-full scale-100 md:scale-110 '>
+					<div className='p-4 xl:w-[35%] md:w-1/2 w-full scale-100 md:scale-110 lg:ml-0 xl:ml-16'>
 						<div className='h-full p-6 rounded-lg border-[1px] border-[#667eea] flex flex-col relative overflow-hidden bg-[#665eea]/5 shadow-[0_10px_20px_rgba(116,79,168,0.20)]'>
 							<span className='bg-gradient-to-r select-none from-[#667eea] from-10% via-[#9562c8] via-30% to-[#6B8DD6] to-90% text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl font-[GilroySemiBold]'>
 								MOST POPULAR
