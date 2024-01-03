@@ -1,0 +1,60 @@
+---
+import Grid from './Grid.astro'
+import Link from './Link.astro'
+---
+
+<section class='text-gray-600 overflow-hidden wave px-2'>
+  <div class='container px-5 py-32 mx-auto'>
+    <div class='flex flex-col text-center w-full mb-20 gap-4'>
+      <span class='text-transparent bg-clip-text bg-gradient-to-b from-[#04B4E6] to-blue-600 font-[GilroySemiBold]'>
+        Thanks for your support
+      </span>
+      <h1 class='sm:text-7xl text-5xl font-[GilroyBold] mb-2 text-gray-900 dark:text-white'>
+        Sponsor
+      </h1>
+      <p class='lg:w-2/3 mx-auto leading-relaxed text-base font-[GilroySemiBold] text-gray-500'>
+        By sponsoring Wind UI you help the team behind it to continue
+        creating wonderful products for the developer community.
+      </p>
+      <p class='lg:w-2/3 mx-auto leading-relaxed text-base font-[GilroySemiBold] text-gray-500'>
+        For more information, please scroll down.
+      </p>
+    </div>
+    <article class='flex flex-wrap items-center justify-center -m-4'>
+      <div class='relative overflow-hidden rounded-2xl bg-gradient-to-br from-white/5 to-darker/5 p-8 bg-darker'>
+        <div class='text-xl font-GilroyBold text-white md:text-3xl'>
+          <picture class='select-none'>
+            <source
+              media='(prefers-color-scheme: dark)'
+              srcSet='/svg/logo-light.svg'
+            />
+            <source
+              media='(prefers-color-scheme: light)'
+              srcSet='/svg/logo-dark.svg'
+            />
+            <img
+              alt='Wind UI'
+              src='/svg/logo-light.svg'
+              width='150'
+              height='70'
+              style={{ maxWidth: '100%' }}
+            />
+          </picture>
+        </div>
+        <div class='mt-4 text-lg z-10 font-GilroySemibold text-gray-300'>
+          Support the development of Wind UI and get exclusive rewards.
+        </div>
+        <p class='mt-4 text-lg font-GilroyRegular'>
+          Design stunning landing pages with the same quality you love on
+          your favorite sites. <br class='hidden md:block' />
+          Create stunning landing pages with our customizable premium
+          components.
+        </p>
+        <div class='pt-6 font-GilroySemibold text-base'>
+          <Link />
+        </div>
+        <Grid />
+      </div>
+    </article>
+  </div>
+</section>
