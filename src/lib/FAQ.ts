@@ -7,20 +7,6 @@ export interface FAQ {
 
 export const FAQS: FAQ[] = [
 	{
-		key: 1,
-		label: 'What exactly do you mean by "lifetime access"?',
-		title: 'What exactly do you mean by "lifetime access"?',
-		content:
-			'Wind UI products are characterized as a one-time investment, without the need for recurring subscriptions. Once you purchase any Wind UI product, you get perpetual access to all the content included in that product.'
-	},
-	{
-		key: 2,
-		label: 'What do you mean by "free updates"?',
-		title: 'What do you mean by "free updates"?',
-		content:
-			'When you purchase a Wind UI product, we guarantee that any enhancements we implement or new content we introduce in that product will be available for free to everyone who already owns it. Your initial investment gives you ongoing access to the enhancements and additions we make, at no additional cost. This means you will always be up to date with the latest features and benefits without having to spend more money. Our priority is to ensure that our customers get maximum value from their purchases over time. We regularly add new components to these packages whenever we have new ideas, and you can see what previous updates have looked like in our changelog.'
-	},
-	{
 		key: 3,
 		label: 'Which JS framework is used?',
 		title: 'Which JS framework is used?',
@@ -42,13 +28,6 @@ export const FAQS: FAQ[] = [
 			'Tailwind CSS work in the latest, stable releases of all major browsers, including Chrome, Firefox, Safari, and Edge. Internet Explorer is not supported.'
 	},
 	{
-		key: 6,
-		label: 'Will I have to buy a license every time I start a new project?',
-		title: 'Will I have to buy a license every time I start a new project?',
-		content:
-			'No, you can use the same license on as many projects as you wish, as long as it conforms to the terms of the final user license. \n You can consult the license at https://windui.org/license'
-	},
-	{
 		key: 7,
 		label: 'Wind UI is related to the Tailwind CSS team?',
 		title: 'Wind UI is related to the Tailwind CSS team?',
@@ -68,18 +47,5 @@ export const FAQS: FAQ[] = [
 		title: 'Can I sell templates/themes that I have built with Wind UI?',
 		content:
 			'No, the Wind UI license does not permit the creation of derivative products, such as themes, UI kits, page builders or other products in which you repackage and redistribute our components or templates for others to use in building their own websites. The Wind UI license is designed for use of our components and templates in individual projects, but not for redistribution or creation of competing products based on our resources. We recommend you to respect this limitation and use Wind UI in accordance with the license terms.'
-	},
-	{
-		key: 10,
-		label: 'Do you offer any technical support?',
-		title: 'Do you offer any technical support?',
-		content:
-			'Wind UI is a self-service product, which means that we offer customer support for account management and licensing issues. However, it is important to note that customers are expected to have the necessary knowledge of Tailwind CSS, HTML, React, Vue, Svelte or Astro to take full advantage of the product and use it successfully. \n Wind UI customers have exclusive access to a Discord community where they can discuss their questions about the product with other users.'
-	},
-	{
-		key: 11,
-		label: 'What is your refund policy?',
-		title: 'What is your refund policy?',
-		content: `We offer a 14-day money-back guarantee on all purchases. If you are not satisfied with your purchase, you can request a refund within 14 days of the purchase date. \n To request a refund, please contact us at sales@boxode.org and we'll refund you in full, no questions asked.`
 	}
 ]
