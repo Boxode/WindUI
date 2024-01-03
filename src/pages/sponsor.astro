@@ -1,0 +1,18 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Sponsors from '@/components/sponsor/Sponsor.astro';
+import About from '@/components/sponsor/About.astro';
+import WhatsIncluded from '@/components/sponsor/WI.astro';
+import FAQ from "@/components/sponsor/FAQ"
+import Footer from '@/components/Footer.astro';
+---
+
+<Layout title='Sponsor - Wind UI' description='Sponsor and Support the development of Wind UI and get exclusive rewards.'>
+  <Header />
+  <Sponsors />
+  <About />
+  <WhatsIncluded />
+  <FAQ client:visible />
+  <Footer />
+</Layout>
