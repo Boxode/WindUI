@@ -1,9 +1,10 @@
 import { ProductHunt, Boxode, Tailwind, Astro, Stripe } from './Companies'
 import '../grid.css'
 
+
 export default function Hero() {
 	return (
-		<div
+		<section
 			className='relative overflow-hidden dark:bg-darker lg:overflow-auto magicpattern'
 			id='home'
 		>
@@ -29,9 +30,9 @@ export default function Hero() {
 						<div className='text-center sm:px-12 md:w-2/3 md:px-0 md:text-left lg:w-1/2'>
 							<h1 className='text-gray-900 dark:text-white font-[GilroyBold] text-4xl md:text-5xl xl:text-6xl'>
 								<span className='bg-gradient-to-l from-purple-500 via-blue-500 to-transparent bg-clip-text text-transparent dark:from-white dark:via-cyan-300'>
-									Design {''}
+									Design
 								</span>
-								and build your next idea more faster and more{' '}
+								and build your next idea more faster and more
 								<span className='bg-gradient-to-r from-blue-950 via-blue-950 to-transparent bg-clip-text text-transparent dark:from-white dark:via-purple-500'>
 									beautifully.
 								</span>
@@ -78,6 +79,6 @@ export default function Hero() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	)
 }
