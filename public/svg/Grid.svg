@@ -1,8 +1,8 @@
-<svg viewBox="0 0 220 124" xmlns="http://www.w3.org/2000/svg" style="opacity: .5;">
+<svg viewBox="0 0 220 124" xmlns="http://www.w3.org/2000/svg" style="opacity: .5;" class=''>
 	<mask id="b" x="0" y="0" width="1920" height="1080">
 		<path fill="url(#a)" d="M0 0h220v124H0z" />
 	</mask>
-	<path fill="rgb(9,14,26)" d="M0 0h220v124H0z" />
+	<path fill="transparent" d="M0 0h220v124H0z" />
 	<g style="transform-origin:center center" stroke="#4c4e725c" stroke-width=".22" mask="url(#b)">
 		<path fill="none" d="M0 0h8v8H0zM8 0h8v8H8z" />
 		<path fill="#4c4e7236" d="M16 0h8v8h-8z" />
