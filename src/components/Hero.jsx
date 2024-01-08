@@ -45,7 +45,7 @@ export default function Hero() {
 								<a
 									href='https://boxode.org'
 									target='_blank'
-									className='font-[GilroySemiBold] text-base opacity-50 text-white underline'
+									className='font-[GilroySemiBold] text-base opacity-50 text-black dark:text-white underline'
 								>
 									Created with ❤ by Boxode Labs
 								</a>
