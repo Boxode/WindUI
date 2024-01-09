@@ -1,7 +1,7 @@
 {
-	"name": "windui-1",
+	"name": "windui",
 	"type": "module",
-	"version": "0.0.1",
+	"version": "alpha-1.1",
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
