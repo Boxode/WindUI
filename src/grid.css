@@ -5,4 +5,5 @@
   background-position: center center;
   background-repeat: repeat;
   background-image: url("/svg/Grid.svg");
+  @apply stroke-black/10 dark:stroke-white/10
 }
