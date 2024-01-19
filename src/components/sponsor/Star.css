@@ -145,5 +145,5 @@
 }
 
 .fil0 {
-  fill: #fffdef;
+  @apply fill-darker dark:fill-[#fffdef]
 }
