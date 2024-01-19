@@ -12,27 +12,27 @@ export default function Hero() {
 				aria-hidden='true'
 				className='absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20'
 			>
-				<div className='blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700'></div>
-				<div className='blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600'></div>
+				<div className='blur-[106px] h-56 bg-gradient-to-br from-primary/40 to-purple-400/40 dark:from-blue-700'></div>
+				<div className='blur-[106px] h-32 bg-gradient-to-r from-cyan-400/40 to-sky-300/40 dark:to-indigo-600'></div>
 			</div>
 			<div className='absolute inset-x-0 top-32 lg:hidden'>
 				<div
 					aria-hidden='true'
 					className='grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-60 2xl:mx-auto 2xl:max-w-6xl'
 				>
-					<div className='h-60 bg-gradient-to-br from-primary to-purple-400 blur-3xl dark:from-blue-700'></div>
-					<div className='h-72 rounded-full bg-gradient-to-r from-cyan-400 to-sky-300 blur-3xl dark:from-transparent dark:to-indigo-600'></div>
+					<div className='h-60 bg-gradient-to-br from-primary/20 to-purple-400/20 blur-3xl dark:from-blue-700'></div>
+					<div className='h-72 rounded-full bg-gradient-to-r from-cyan-400/20 to-sky-300/20 blur-3xl dark:from-transparent dark:to-indigo-600'></div>
 				</div>
 			</div>
 			<div className='mx-auto max-w-6xl px-6 md:px-12 lg:px-6 xl:px-0'>
 				<div className='relative ml-auto pt-40 xl:pt-48'>
 					<div className='gap-12 md:flex md:items-center'>
 						<div className='text-center sm:px-12 md:w-2/3 md:px-0 md:text-left lg:w-1/2'>
-							<h1 className='text-gray-900 dark:text-white font-[GilroyBold] text-4xl md:text-5xl xl:text-6xl'>
+							<h1 className='text-gray-900 dark:text-white font-[GilroyBold] text-4xl md:text-5xl xl:text-6xl text-balance'>
 								<span className='bg-gradient-to-l from-purple-500 via-blue-500 to-transparent bg-clip-text text-transparent dark:from-white dark:via-cyan-300'>
-									Design
+									Design{' '}
 								</span>
-								and build your next idea more faster and more
+								and build your next idea more faster and more{' '}
 								<span className='bg-gradient-to-r from-blue-950 via-blue-950 to-transparent bg-clip-text text-transparent dark:from-white dark:via-purple-500'>
 									beautifully.
 								</span>
