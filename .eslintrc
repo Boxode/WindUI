@@ -20,7 +20,7 @@
 		"indent": ["warn", "tab"],
 		"no-unused-vars": "warn",
 		"space-before-function-paren": "off",
-		" multiline-ternary": "off",
+		"multiline-ternary": "off",
 		"@typescript-eslint/no-unused-vars": [
 			"warn",
 			{
