@@ -15,7 +15,7 @@ export default function FAQ() {
 					<h2 className='text-lg leading-7 text-transparent bg-clip-text bg-gradient-to-b from-[#04B4E6] to-blue-600 font-GilroySemibold'>
 						Frequently asked questions
 					</h2>
-					<p className='mt-4 text-4xl font-GilroyBold tracking-tight text-white xl:text-6xl xl:leading-[3.5rem]'>
+					<p className='mt-4 text-4xl font-GilroyBold tracking-tight text-black dark:text-white xl:text-6xl xl:leading-[3.5rem]'>
 						Everything you need to know about wind UI
 						<span className='text-transparent bg-clip-text bg-gradient-to-b from-[#04B4E6] to-blue-600'>
 							.
