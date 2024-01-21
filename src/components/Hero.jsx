@@ -1,6 +1,11 @@
-import { ProductHunt, Boxode, Tailwind, Astro, Stripe } from './Companies'
+import {
+	ProductHuntLogo,
+	BoxodeLogo,
+	TailwindLogo,
+	AstroLogo,
+	StripeLogo
+} from './Companies'
 import '../grid.css'
-
 
 export default function Hero() {
 	return (
@@ -70,11 +75,11 @@ export default function Hero() {
 							TRUSTED BY YOUR FAVORED COMPANIES
 						</span>
 						<div className='mt-8 flex flex-wrap items-center justify-center gap-6 transition-colors sm:justify-between lg:gap-16'>
-							<ProductHunt />
-							<Boxode />
-							<Tailwind />
-							<Astro />
-							<Stripe />
+							<ProductHuntLogo />
+							<BoxodeLogo />
+							<TailwindLogo />
+							<AstroLogo />
+							<StripeLogo />
 						</div>
 					</div>
 				</div>
