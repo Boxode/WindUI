@@ -26,3 +26,5 @@ pnpm-debug.log*
 /blob-report/
 /playwright/.cache/
 /tests-examples/
+
+data.sql
