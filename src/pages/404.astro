@@ -2,10 +2,12 @@
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
+import { Meteors } from "@/components/Meteos";
 ---
 <Layout title="404 - page not found" description="Page not found">
 	<Header />
 	<main>
+		<Meteors client:visible />
 		<div class="min-w-screen min-h-screen flex items-center p-5 lg:p-20 overflow-hidden relative">
 			<div
 				class="flex-1 min-h-full min-w-full rounded-3xl p-10 lg:p-20 text-gray-800 relative md:flex items-center text-center md:text-left">
