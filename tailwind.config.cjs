@@ -40,9 +40,9 @@ module.exports = {
 				}
 			},
 			fontFamily: {
-				GilroyRegular: 'GilroyRegular, sans-serif',
-				GilroySemibold: 'GilroySemibold, sans-serif',
-				GilroyBold: 'GilroyBold, sans-serif'
+				GilroyRegular: 'GilroyRegular, system-ui, sans-serif',
+				GilroySemibold: 'GilroySemibold, system-ui, sans-serif',
+				GilroyBold: 'GilroyBold, system-ui, sans-serif'
 			}
 		}
 	},
