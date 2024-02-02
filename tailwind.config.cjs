@@ -22,8 +22,7 @@ module.exports = {
 			},
 			animation: {
 				meteor: 'meteor 5s linear infinite',
-				'text-gradient': 'text-gradient 1.5s linear infinite',
-				fade: 'fade 1s both'
+				'text-gradient': 'text-gradient 1.5s linear infinite'
 			},
 			keyframes: {
 				meteor: {
@@ -33,10 +32,6 @@ module.exports = {
 						transform: 'rotate(215deg) translateX(-500px)',
 						opacity: 0
 					}
-				},
-				fade: {
-					'0%': { opacity: 0 },
-					'100%': { opacity: 1 }
 				}
 			},
 			fontFamily: {
@@ -46,5 +41,5 @@ module.exports = {
 			}
 		}
 	},
-	plugins: [nextui()]
+	plugins: [nextui(), require('tailwindcss-animated')]
 }
