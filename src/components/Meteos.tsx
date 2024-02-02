@@ -1,12 +1,11 @@
 import clsx from 'clsx'
 import { useEffect, useRef, useState } from 'react'
-import '../globals.css'
 
 interface MeteorsProps {
 	number?: number
 }
 
-export const Meteors = ({ number = 10 }: MeteorsProps) => {
+export const Meteors = ({ number = 20 }: MeteorsProps) => {
 	const [meteorStyles, setMeteorStyles] = useState([])
 	const ref = useRef(null)
 
@@ -23,12 +22,14 @@ export const Meteors = ({ number = 10 }: MeteorsProps) => {
 
 		setMeteorStyles(styles)
 	}, [number])
+
 	return (
 		<div
 			ref={ref}
 			className='absolute overflow-hidden inset-0 w-full h-full animate-fade animate-once animate-duration-1000 z-[-1]'
 		>
 			{[...meteorStyles].map((style, idx) => (
+				// Meteor Head
 				<span
 					key={idx}
 					className={clsx(
@@ -36,7 +37,8 @@ export const Meteors = ({ number = 10 }: MeteorsProps) => {
 					)}
 					style={style}
 				>
-					<div className='pointer-events-none absolute top-1/2 -z-10 h-[1px] w-[50px] -translate-7-1/2 bg-gradient-to-r from-slate-500 to-transparent' />
+					{/* Meteor Tail */}
+					<div className='pointer-events-none absolute top-1/2 -z-10 h-[1px] w-[50px] -translate-y-1/2 bg-gradient-to-r from-slate-500 to-transparent' />
 				</span>
 			))}
 		</div>
