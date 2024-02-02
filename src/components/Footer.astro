@@ -1,5 +1,7 @@
 ---
 import { Image } from 'astro:assets';
+
+const year = new Date().getFullYear();
 ---
 
 <footer class="bg-gradient-to-b from-transparent to-gray-100 py-12 dark:to-gray-900">
@@ -83,7 +85,7 @@ import { Image } from 'astro:assets';
 			</a>
 		</div>
 		<div class="mt-12 text-center">
-			<p class="text-sm tracking-wide text-gray-500 flex flex-col font-[GilroyRegular]">© 2023 Wind UI is a trademark of
+			<p class="text-sm tracking-wide text-gray-500 flex flex-col font-[GilroyRegular]">© {year} Wind UI is a trademark of
 				Boxode, Ltd.</p>
 		</div>
 	</div>
