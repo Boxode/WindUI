@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+import animations from '@midudev/tailwind-animations'
 const { nextui } = require('@nextui-org/react')
+
 module.exports = {
 	content: [
 		'./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
@@ -41,5 +42,5 @@ module.exports = {
 			}
 		}
 	},
-	plugins: [nextui(), require('tailwindcss-animated')]
+	plugins: [ nextui(), require( 'tailwindcss-animated' ), animations ]
 }
