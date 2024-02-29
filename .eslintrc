@@ -21,6 +21,9 @@
 		"no-unused-vars": "warn",
 		"space-before-function-paren": "off",
 		"multiline-ternary": "off",
+		"@typescript-eslint/no-var-requires": "off",
+		"array-bracket-spacing": "off",
+		"space-in-parens": "off",
 		"@typescript-eslint/no-unused-vars": [
 			"warn",
 			{
