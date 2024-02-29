@@ -1,11 +1,11 @@
-import {
-	ProductHuntLogo,
-	BoxodeLogo,
-	TailwindLogo,
-	AstroLogo,
-	StripeLogo
-} from './Companies'
 import '../grid.css'
+import {
+	AstroLogo,
+	BoxodeLogo,
+	ProductHuntLogo,
+	StripeLogo,
+	TailwindLogo
+} from './Companies'
 
 export default function Hero() {
 	return (
@@ -33,7 +33,7 @@ export default function Hero() {
 				<div className='relative ml-auto pt-40 xl:pt-48'>
 					<div className='gap-12 md:flex md:items-center'>
 						<div className='text-center sm:px-12 md:w-2/3 md:px-0 md:text-left lg:w-1/2'>
-							<h1 className='text-gray-900 dark:text-white font-GilroyBold text-4xl md:text-5xl xl:text-6xl text-balance'>
+							<h1 className='text-gray-900 dark:text-white font-GilroyBold text-4xl md:text-5xl xl:text-6xl text-balance animate-fade-in-down animate-delay-300'>
 								<span className='bg-gradient-to-l from-purple-500 via-blue-500 to-transparent bg-clip-text text-transparent dark:from-white dark:via-cyan-300'>
 									Design{' '}
 								</span>
@@ -43,7 +43,7 @@ export default function Hero() {
 								</span>
 							</h1>
 							<div className='pb-12'>
-								<p className='mt-8 text-gray-700 font-GilroyRegular dark:text-gray-300 pb-10'>
+								<p className='mt-8 text-gray-700 font-GilroyRegular dark:text-gray-300 pb-10 animate-fade-in-down animate-delay-500'>
 									Build the perfect starting point to breathe life into your
 									next project, an endless source of creativity and stylistic
 									perfection.
@@ -51,13 +51,13 @@ export default function Hero() {
 								<a
 									href='https://boxode.org'
 									target='_blank'
-									className='font-GilroySemibold text-base opacity-50 text-black dark:text-white underline'
+									className='font-GilroySemibold text-base opacity-50 text-black dark:text-white underline animate-fade-in-down animate-delay-700'
 								>
 									Created with ❤ by Boxode Labs
 								</a>
 							</div>
 						</div>
-						<div className='relative mt-20 md:mt-0 md:w-2/5 lg:w-3/5 select-none'>
+						<div className='relative mt-20 md:mt-0 md:w-2/5 lg:w-3/5 select-none animate-fade-in-down animate-delay-600'>
 							<div className='-ml-6 md:-mr-72 lg:mr-0'>
 								<img
 									className='h-full object-cover object-left'
